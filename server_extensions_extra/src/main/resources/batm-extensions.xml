@@ -92,6 +92,7 @@
                 <cryptocurrency>CLOAK</cryptocurrency>
                 <cryptocurrency>FLASH</cryptocurrency>
                 <cryptocurrency>XSG</cryptocurrency>
+                <cryptocurrency>XUEZ</cryptocurrency>
             </ratesource>
             <ratesource prefix="stream365" name ="365.stream" >
                 <cryptocurrency>HBX</cryptocurrency>
@@ -149,6 +150,7 @@
                 <cryptocurrency>XMR</cryptocurrency>
                 <cryptocurrency>XSG</cryptocurrency>
                 <cryptocurrency>XZC</cryptocurrency>
+                <cryptocurrency>XUEZ</cryptocurrency>
                 <help>USD is default fiat currency.</help>
             </ratesource>
             <paymentprocessor prefix="bitcoinpay" name="BitcoinPay.com" >
@@ -1195,4 +1197,26 @@
         <cryptologo cryptocurrency="XSG" file="xsg.png"/>
         <cryptologo cryptocurrency="XSG" file="xsg.svg"/>
     </extension>
+    <extension class="com.generalbytes.batm.server.extensions.extra.xuez.XuezExtension" >
+        <wallet prefix="xuezd" name="xuezd">
+            <param name="protocol" />
+            <param name="user" />
+            <param name="password" />
+            <param name="host" />
+            <param name="port" />
+            <cryptocurrency>XUEZ</cryptocurrency>
+        </wallet>
+        <wallet prefix="xuezdemo" name="Xuez Demo Wallet">
+            <param name="fiatCurrency" />
+            <param name="walletAddress" />
+            <cryptocurrency>XUEZ</cryptocurrency>
+        </wallet>
+        <ratesource prefix="xuezfix" name ="Fix Price" >
+            <param name="price" />
+            <cryptocurrency>XUEZ</cryptocurrency>
+        </ratesource>
+        <cryptologo cryptocurrency="XUEZ" file="xuez.png"/>
+        <cryptologo cryptocurrency="XUEZ" file="xuez.svg"/>
+    </extension>
 </extensions>
+
