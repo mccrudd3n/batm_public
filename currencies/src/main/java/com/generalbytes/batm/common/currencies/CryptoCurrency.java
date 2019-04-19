@@ -85,6 +85,7 @@ public enum CryptoCurrency {
     VIA("Viacoin"),
     VOLTZ("VOLTZ"),
     WDC("WorldCoin"),
+    XUEZ("Xuez"),
     XMR("Monero"),
     XSG("SnowGem"),
     XZC("Zcoin"),
